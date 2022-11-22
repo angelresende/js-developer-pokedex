@@ -1,0 +1,151 @@
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
+.card-pokemon{
+    position: relative;
+    height: 700px;  
+    width: 500px;  
+    border-radius: 12px;
+    left: 225px;
+
+}
+
+.card-header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+
+    position: absolute;
+    width: 200px;
+    height: 32px;
+    top: 24px;
+}
+
+.card-back{
+    padding-left: 20px;
+    width: 60px;
+    height: 32px;
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.card-name{
+    padding-left: 20px;
+    width: 300px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.card-id{
+    width: 50px;
+    height: 32px;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.card.image{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 80px;
+    top: 80px;
+}
+
+.card-details{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 56px 20px 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 400px;
+    height: 312px;
+    left: 50px;
+    top: 324px;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+}
