@@ -19,6 +19,7 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
+            <a href="#" class="details">Mais informações...</a>
         </li>
     `
 }
