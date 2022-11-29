@@ -1,7 +1,4 @@
-const pokemonList = document.getElementById('details_pokemons')
-
-
-function convertPokemonToLi(pokemon) {
+function detailsPokemon(pokemon) {
     return `
             <div class="col card-pokemon ${pokemon.type}">
                 <div class="card-header">
@@ -19,19 +16,30 @@ function convertPokemonToLi(pokemon) {
                 </div>
 
                 <div class="card-details">
-                    <p><strong>Types :</strong>${pokemon.types.map((type) => `${type}, `).join('')} </p>
+                    <p><strong>Types: </strong>${pokemon.types.map((type) => `${type}, `).join('')} </p>
 
-                    <p><strong>Abilities :</strong> </p>
+                    <p><strong>Abilities: </strong> ${pokemon.abilities.join(', ')}</p>
 
-                    <p><strong>Base experience :</strong></p>
+                    <p><strong>Moves: </strong> ${pokemon.moves.join(', ')} </p>
 
-                    <p><strong>Moves :</strong></p>
-
-                    <p><strong>Weight :</strong></p>
+                    <p><strong>Weight: </strong> ${pokemon.weight} Kg</p>
+                    
+                    <p><strong>Height: </strong> ${pokemon.height} Kg</p>
                 </div>
 
             </div>
     `
+}
+
+const pokemonId = window.location.search.replace('?id=', '');
+detailsPokemonId();
+
+function detailsPokemonId() {
+  pokeApi.getPokemon(pokemonId)
+    .then(pokemon => {
+      const details_pokemons = document.querySelector('.details_pokemons');
+      details_pokemons.innerHTML += detailsPokemon(pokemon);
+    });
 }
 
 

@@ -1,3 +1,85 @@
+body,
+.details_pokemons{
+    display: grid;
+    justify-content: center;
+}
+
+.card-pokemon{
+    position: relative;
+    height: 900px;  
+    width: 700px;  
+    border-radius: 12px;
+    align-items: center;
+}
+
+.card-header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 144px;
+    font-size: 24px;
+
+    position: absolute;
+    width: 200px;
+    height: 32px;
+    top: 24px;
+}
+
+.card-back{
+    padding-left: 20px;
+    width: 60px;
+    height: 32px;
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.card-name{
+    padding-left: 20px;
+    width: 300px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.card-id{
+    width: 50px;
+    height: 32px;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 240px;
+    top: 120px;
+}
+
+
+.card-details{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px 0px;
+    position: absolute;
+    width: 600px;
+    left: 50px;
+    top: 340px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
 .normal {
     background-color: #a6a877;
 }
@@ -70,88 +152,5 @@
     background-color: #f9aec7;
 }
 
-section{
-    width: 200px;
-    border: 1px solid #2d2d2d;
-    display: grid;
-    justify-content: center;
-}
-
-.card-pokemon{
-    position: relative;
-    height: 700px;  
-    width: 500px;  
-    border-radius: 12px;
-    align-items: center;
-}
-
-.card-header{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-    gap: 10px;
-    font-size: 24px;
-
-    position: absolute;
-    width: 200px;
-    height: 32px;
-    top: 24px;
-}
-
-.card-back{
-    padding-left: 20px;
-    width: 60px;
-    height: 32px;
-    display: flex;
-    color: #FFFFFF;
-    align-items: center;
-}
-
-.card-name{
-    padding-left: 20px;
-    width: 300px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-}
-
-.card-id{
-    width: 50px;
-    height: 32px;
-    display: flex;
-    text-align: right;
-    align-items: center;
-    color: #FFFFFF;
-}
-
-img{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    left: 150px;
-    top: 120px;
-}
 
 
-.card-details{
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 20px 0px;
-
-    position: absolute;
-    width: 400px;
-    height: 312px;
-    left: 50px;
-    top: 324px;
-
-    background: #FFFFFF;
-    border-radius: 8px;
-}
